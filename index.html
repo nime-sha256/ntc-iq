@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTC-IQ</title>
+  <style>
+    .section {
+        margin: 50px 0;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background-color: #f8f8f8;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 1rem 3rem;
+        border-radius: 8px;
+    }
+    h1, h2, h3 {
+      color: #003366;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.7rem;
+      margin-top: 2.5rem;
+    }
+    h3 {
+      margin-top: 1.8rem;
+      font-size: 1.3rem;
+    }
+    p, li {
+      font-size: 1.05rem;
+    }
+    /* ul {
+      line-height: 2rem;
+    } */
+
+
+    a {
+        color: #316fad;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #325d88;
+        text-decoration: underline;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+    }
+    th, td {
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        text-align: left;
+    }
+    .section {
+        margin: 50px 0;
+    }
+    .li-item {
+      margin-bottom: .5em;
+      line-height: 1.5rem;
+    }
+    hr {
+        border: 0;
+        border-top: 1px solid #ccc;
+        padding-left: 100px;
+    }
+    p {
+      line-height: 1.5rem;
+    }
+    a.btn {
+        background: #007ACC;
+        color: white;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+    a.btn:hover {
+        background: #005A9C;
+    }
+    .team-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .team-member {
+        text-align: center;
+    }
+
+    .team-member img {
+        width: 100%;
+        max-width: 140px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 0.8rem auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-member a {
+        display: block;
+        font-weight: bold;
+        color: #003366;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .team-member a:hover {
+        text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section" style="margin-bottom: 30px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;">
+            
+            <!-- Left: Heading + Paragraph -->
+            <div style="flex: 1; min-width: 300px;">
+              <h1 style="margin-bottom: 0.5rem;">NTC-IQ</h1>
+            </div>
+            
+            <!-- Right: Logos -->
+            <div style="display: flex; gap: 20px;">
+              <img src="./unsw.jpg" alt="UNSW Logo" style="height: 60px;">
+              <img src="./cse.png" alt="UCI Logo" style="height: 60px;">
+            </div>
+
+          </div>
+        </div>
+        
+
+        <hr>
+
+        <div class="section">
+    
+            <h2 >Bridging the Gap Between Network Intelligence and AI</h2>
+        
+            <p><strong>NTC-IQ</strong> is an academic initiative aimed at enabling network-aware artificial intelligence. We present a research-driven framework to analyze and classify encrypted network traffic using RFC-compliant features—ensuring privacy preservation without sacrificing performance.</p>
+            
+            <!-- <div style="width: 100%; display: flex; justify-content: center; align-items: center; margin: 2em 0">
+                <img src="ntc.png" alt="network traffic classification" style="width: 60%; padding:20px; border: 1px solid black;">
+            </div> -->
+            
+
+            <p>With a series of academic publications, NTC-IQ:</p>
+            <ul>
+            <li class="li-item">Evaluates contemporary machine learning approaches for network traffic classification and reveals the systemic consequences of using outdated, pre-TLS 1.3 datasets.</li>
+            <li class="li-item">Identifies and addresses deeply rooted methodological flaws that undermine academic studies, commercial products, and patented solutions.</li>
+            <li class="li-item">Challenges the status quo of increasing computational complexity and the widespread neglect of real-world protocol behaviors.</li>
+            <li class="li-item">Demonstrates that minimal, RFC-aligned representations can achieve state-of-the-art results while being dramatically more efficient.</li>
+            </ul>
+        </div>
+
+        <hr>
+      
+        <div class="section">
+            <h2>Our Research</h2>
+        
+            <!-- <h3>1. Echoes of the Past: Outdated Datasets in Network Traffic Classification</h3>
+            <p>
+            The first study evaluates 50+ highly cited traffic classification papers and finds that over 75% of them depend on datasets collected before TLS 1.3 was introduced. These outdated datasets not only contain insecure cipher suites but also often include unencrypted flows. This mismatch between protocol reality and research assumptions leads to misleading performance claims and non-generalizable models.
+            </p>
+            <p><a href="1.pdf" target="_blank">Read the paper (PDF)</a></p> -->
+        
+            <h3>1. SoK: Decoding the Enigma of Encrypted Network Traffic Classifiers</h3>
+            <p>
+                The study provides a critical evaluation of machine learning (ML)-based network traffic classification (NTC) in the era of pervasive encryption (e.g., TLS 1.3). 
+                It identifies major shortcomings in current NTC research, including the widespread use of outdated and unencrypted datasets, poor design decisions leading to inflated accuracies, and reliance on 
+                unsubstantiated assumptions.
+            </p>
+            <p>Key contributions include:</p>
+            <ol>
+                <li class="li-item"><strong>Taxonomy of NTC Literature:</strong> provides a structured analysis of ML-based NTC methods, focusing on design and benchmarking choices.</li>
+                <li class="li-item"><strong>Dataset Evaluation:</strong> demonstrates that many widely used datasets contain mostly unencrypted traffic or rely on deprecated cipher suites, making them unfit for evaluating modern NTC systems.</li>
+                <li class="li-item"><strong>CipherSpectrum Dataset:</strong> introduces a new dataset with traffic encrypted using all three cipher suites mandated/strongly-recommended by TLS 1.3.</li>
+                <li class="li-item"><strong>Empirical Critique:</strong> exposes how design choice oversights lead to overfitting and poor generalization using 348 occlusion experiments.</li>
+                <li class="li-item"><strong>Recommendations:</strong> issues guidelines for avoiding overfitting and building generalizable classifiers.</li>
+            </ol>
+
+            <p>Overall, the work offers a systematic critique of the field, highlighting methodological flaws and proposing best practices for future NTC research.</p>
+
+            <p><a href="https://arxiv.org/pdf/2503.20093" target="_blank">Read the paper [IEEE S&P'25]</a> | <a href="https://cspectrum.web.cse.unsw.edu.au" target="_blank">CipherSpectrum Dataset</a></p>
+        
+            <div style="height: 0.25em;"></div>
+
+
+            <h3>2. Less is More: Simplifying Network Traffic Classification Leveraging RFCs</h3>
+            <p>
+            The <strong>LiM</strong> study introduces a lightweight, RFC-compliant methodology for encrypted network traffic classification (NTC). 
+            The study critiques prevailing deep-learning-based approaches for relying on flawed assumptions and inefficient data representations, proposing a minimalist yet effective alternative.
+            </p>
+
+            <p>Key contributions include:</p>
+            <ul>
+            <li class="li-item">
+                <strong>Problem Analysis:</strong> The paper identifies five critical issues in current NTC methods:
+                <ul>
+                <li class="li-item"><strong>C1:</strong> Assumes exploitable patterns exist in encrypted payloads, which contradicts TLS 1.3's encryption guarantees.</li>
+                <li class="li-item"><strong>C2:</strong> Uses fixed-size payload representations that obscure valuable traffic characteristics.</li>
+                <li class="li-item"><strong>C3:</strong> Includes session-specific, noisy header fields that do not generalize well.</li>
+                <li class="li-item"><strong>C4:</strong> Converts network traffic into text or images, distorting protocol semantics.</li>
+                <li class="li-item"><strong>C5:</strong> Depends on handshake packets that are often absent due to session reuse and 0-RTT in TLS 1.3.</li>
+                </ul>
+            </li>
+            <li class="li-item">
+                <strong>NetMatrix Representation:</strong> A compact tabular format using three RFC-compliant attributes:
+                <ul>
+                <li class="li-item">Total Length (IP header)</li>
+                <li class="li-item">Time-To-Live (TTL)</li>
+                <li class="li-item">Inter-Arrival Time</li>
+                </ul>
+                This representation requires only 30 bytes per session, significantly reducing data volume compared to deep learning models.
+            </li>
+            <li class="li-item">
+                <strong>LiM Classifier:</strong> A simple XGBoost-based classifier paired with NetMatrix that rivals state-of-the-art deep learning models in performance without the computational overhead.
+            </li>
+            <li class="li-item">
+                <strong>Experimental Validation:</strong> Evaluated on the CSTNET-TLS1.3 dataset, LiM:
+                <ul>
+                <li class="li-item">Achieves 94.2% accuracy, close to YaTC (96.3%) and surpassing ET-BERT (56.8%).</li>
+                <li class="li-item">Drastically reduces latency, memory, and energy usage.</li>
+                <li class="li-item">Achieves over 86,000 inferences/second, making it ideal for real-time use cases.</li>
+                </ul>
+            </li>
+            <li class="li-item">
+                <strong>Practical Implications:</strong> Demonstrates that RFC-aligned, resource-efficient methods like LiM are viable alternatives to complex deep-learning-based NTC approaches.
+            </li>
+            </ul>
+
+            <p>The paper advocates for simplicity in NTC through RFC-guided design. By rejecting complex transformations and focusing on meaningful, stable features, 
+                LiM demonstrates that efficiency and effectiveness are not mutually exclusive.</p>
+
+            <p><a href="https://arxiv.org/pdf/2502.00586" target="_blank">Read the paper [ACM WWW'25]</a> | <a href="https://github.com/nime-sha256/LiM" target="_blank">NetMatrix and LiM</a></p>
+        </div>
+  
+        <hr>
+        
+        <div class="section">
+            <h2>The Team</h2>
+            <div class="team-container">
+                
+                <a href="https://nime-sha256.info" target="_blank">
+                    <div class="team-member">
+                        <img src="nimesha.jpg" alt="Nimesha Wickramasinghe">
+                        Nimesha Wickramasinghe
+                    </div>
+                </a>
+
+                <a href="https://research.unsw.edu.au/people/dr-arash-shaghaghi" target="_blank">
+                    <div class="team-member">
+                        <img src="arash.jpg" alt="Arash Shaghaghi">
+                        Dr. Arash Shaghaghi
+                    </div>
+                </a>
+
+                <a href="https://research.unsw.edu.au/people/professor-sanjay-jha" target="_blank">
+                    <div class="team-member">
+                        <img src="sanjay.jpg" alt="Sanjay Jha">
+                        Prof. Sanjay Jha
+                    </div>
+                </a>
+
+                <a href="https://dawsec.dicom.uninsubria.it/elena.ferrari" target="_blank">
+                    <div class="team-member">
+                        <img src="elena.jpg" alt="Elena Ferrari">
+                        Prof. Elena Ferrari
+                    </div>
+                </a>
+
+                <a href="https://www.ics.uci.edu/~gts/" target="_blank">
+                    <div class="team-member">
+                        <img src="gene.jpg" alt="Gene Tsudik">
+                        Prof. Gene Tsudik
+                    </div>
+                </a>
+            </div>
+        </div>
+      
+        <hr>
+        
+        <div class="section">
+            <h2>Contact</h2>
+            <p>For any questions or feedback, please contact</p>
+            <ul>
+              <li class="li-item">Nimesha Wickramasinghe: <a href="mailto:n.wickramasinghe@unsw.edu.au">n.wickramasinghe@unsw.edu.au</a></li>
+              <li class="li-item">Arash Shaghaghi: <a href="mailto:a.shaghaghi@unsw.edu.au">a.shaghaghi@unsw.edu.au</a></li>
+            </ul>
+        </div>
+      
+        <hr>
+      
+        <footer style="text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #666;">
+          © 2025 NTC-IQ. All rights reserved.
+        </footer>
+          
+      </div>
+</body>
+</html>
